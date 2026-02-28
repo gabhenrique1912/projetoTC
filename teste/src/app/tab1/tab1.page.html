@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>Produtos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <!-- Lista de produtos -->
+  <div class="produtos-container">
+
+    <!-- Caso não tenha produtos -->
+    <div *ngIf="produtos && produtos.length === 0" class="empty">
+      Nenhum produto encontrado.
+    </div>
+
+    <!-- Lista -->
+    <ion-list *ngIf="produtos && produtos.length > 0">
+      <ion-item *ngFor="let produto of produtos">
+        <ion-label>
+          <span class="codigo"> {{ produto.codigo }} </span>
+        
+          <div class="card-body">
+            <h2 class="produto-nome">{{ produto.nome_produto }}</h2>
+            <p>Garantia: {{ produto.tempo_garantia }} meses</p>
+          </div>
+
+        </ion-label>
+      </ion-item>
+    </ion-list>
+
+  </div>
+
+  <!-- Botão flutuante -->
+  <button class="fab" (click)="abrirModal()">+</button>
+
+
+</ion-content>

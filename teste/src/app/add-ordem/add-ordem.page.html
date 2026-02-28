@@ -1,0 +1,79 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>Nova Ordem de Serviço</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <div class="container">
+
+
+      <ion-item class="input-item">
+        <ion-label position="floating">Consumidor</ion-label>
+        <ion-input 
+          type="text"
+          name="nome_consumidor"
+          [(ngModel)]="nome_consumidor"
+          required>
+        </ion-input>
+      </ion-item>
+
+      <ion-item class="input-item">
+        <ion-label position="floating">CPF</ion-label>
+        <ion-input 
+          type="text"
+          name="cpf_consumidor"
+          [(ngModel)]="cpf_consumidor"
+          required>
+        </ion-input>
+      </ion-item>
+
+      <ion-item class="input-item">
+        <ion-label position="floating">Produto</ion-label>
+        <ion-item class="input-item">
+          <ion-label position="floating">Produto</ion-label>
+            <ion-select 
+              placeholder="Selecione o produto" 
+              [(ngModel)]="produto_id" 
+              name="produto_id">
+              
+              <ion-select-option *ngFor="let p of produtos" [value]="p.id">
+                  {{ p.nome_produto }}
+              </ion-select-option>
+
+    </ion-select>
+      </ion-item>
+
+
+
+      </ion-item>
+
+      <ion-item class="input-item">
+        <ion-label position="floating">Defeito percebido</ion-label>
+        <ion-input 
+          type="text"
+          required>
+        </ion-input>
+      </ion-item>
+
+      <ion-item class="input-item">
+        <ion-label position="floating">Solução recomendada</ion-label>
+        <ion-input 
+          type="text"
+          required>
+        </ion-input>
+      </ion-item>
+
+      <ion-button 
+        expand="block" 
+        type="button"
+        class="btn-cadastrar"
+        (click)="cadastrarOrdem()"
+        >
+        Salvar
+      </ion-button>
+
+  </div>
+
+</ion-content>

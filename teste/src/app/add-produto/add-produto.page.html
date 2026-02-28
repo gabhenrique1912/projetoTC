@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>Novo Produto</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <div class="container">
+
+
+      <!-- Nome do Produto -->
+      <ion-item class="input-item">
+        <ion-label position="floating">Nome do Produto</ion-label>
+        <ion-input 
+          type="text"
+          name="nome_produto"
+          [(ngModel)]="nome_produto"
+          required>
+        </ion-input>
+      </ion-item>
+
+      <!-- Tempo Garantia -->
+      <ion-item class="input-item">
+        <ion-label position="floating">Tempo de Garantia (meses)</ion-label>
+        <ion-input 
+          type="number"
+          name="tempo_garantia"
+          [(ngModel)]="tempo_garantia"
+          required>
+        </ion-input>
+      </ion-item>
+
+      <!-- Produto Ativo -->
+      <ion-label>Produto ativo:    </ion-label>
+      
+      <ion-toggle  
+        class="ativo"
+        [(ngModel)]="ativo"
+        name="ativo"
+        color="success">
+      </ion-toggle>
+      
+
+      <ion-button 
+        expand="block" 
+        type="button"
+        class="btn-cadastrar"
+        (click)="cadastrarProduto()"
+        >
+        Salvar
+      </ion-button>
+
+  </div>
+
+</ion-content>

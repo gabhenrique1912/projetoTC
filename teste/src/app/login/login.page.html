@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <div class="login-container">
+
+    <ion-item class="input-item">
+        <ion-label position="floating">E-mail</ion-label>
+        <ion-input 
+          type="text"
+          [(ngModel)]="email"
+          required>
+        </ion-input>
+      </ion-item>
+
+    <ion-item class="input-item">
+        <ion-label position="floating">Senha</ion-label>
+        <ion-input 
+          type="password"
+          [(ngModel)]="senha"
+          required>
+        </ion-input>
+      </ion-item>
+      
+    <ion-button 
+      class="cadastro"
+      fill="clear" 
+      expand="block" 
+      size="small"
+      (click)="abrirModal()"
+      >
+      Ainda não tenho cadastro
+    </ion-button>
+
+    <ion-button 
+      class="login"
+      fill="clear" 
+      expand="block" 
+      size="small" 
+      (click)="fazerLogin()">
+      Entrar
+    </ion-button>
+
+    <p class="erro" *ngIf="erro">
+      {{ erro }}
+    </p>
+
+  </div>
+</ion-content>

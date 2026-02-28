@@ -1,0 +1,31 @@
+ion-content {
+  --background: linear-gradient(135deg, #000000, #223b3f);
+}
+
+.cadastro {
+  height: 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-radius: 14px;
+  background-color: #8ccad4;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+}
+
+.login {
+  height: 40px;
+  --background: #0dc2a4;
+  color: #0d2424;
+  --border-radius: 14px;
+  height: 50px;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+}
+
+ion-item {
+  --background: #8ccad4;
+  --color: #000000; 
+  --border-radius: 12px;
+}

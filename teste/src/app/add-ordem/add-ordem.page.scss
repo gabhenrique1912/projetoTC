@@ -1,0 +1,52 @@
+ion-content {
+  --background: linear-gradient(135deg, #290202, #360000);
+}
+
+.container {
+  margin-top: 30px;
+}
+
+
+
+
+.input-item {
+  margin-bottom: 30px;
+  --background: #ff8888;
+  border-radius: 12px;
+}
+
+
+
+
+ion-item {
+  --background: #ffffff;
+  --color: #000000; 
+  --border-radius: 12px;
+}
+
+ion-input {
+  padding-left: 10px;
+  --color: #000000; 
+}
+
+ion-label {
+  color: #ffffff !important; 
+}
+
+
+.toggle-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-cadastrar {
+  margin-top: 45px;
+  --background: #ff3333;
+  color: #ffffff;
+  --border-radius: 14px;
+  height: 50px;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+}

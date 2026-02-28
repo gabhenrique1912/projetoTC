@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>Cadastro de Usuário</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <div class="container">
+
+    <h1 class="titulo">Criar Conta</h1>
+
+      <!-- Nome -->
+      <ion-item class="input-item">
+        <ion-label position="floating">Nome completo</ion-label>
+        <ion-input 
+          type="text"
+          name="nome"
+          [(ngModel)]="nome"
+          required>
+        </ion-input>
+      </ion-item>
+
+      <!-- Email -->
+      <ion-item class="input-item">
+        <ion-label position="floating">E-mail</ion-label>
+        <ion-input 
+          type="email"
+          name="email"
+          [(ngModel)]="email"
+          required>
+        </ion-input>
+      </ion-item>
+
+      <!-- Senha -->
+      <ion-item class="input-item">
+        <ion-label position="floating">Senha</ion-label>
+        <ion-input 
+          type="password"
+          name="senha"
+          [(ngModel)]="senha"
+          required>
+        </ion-input>
+      </ion-item>
+
+      <ion-button
+        expand="block" 
+        type="submit"
+        class="btn-cadastrar"
+        (click)="cadastrarUsuario()">
+        Cadastrar
+      </ion-button>
+
+
+  </div>
+
+</ion-content>

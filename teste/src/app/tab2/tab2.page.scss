@@ -1,0 +1,56 @@
+ion-content {
+  --background: linear-gradient(135deg, #290202, #360000);
+}
+
+/* Lista */
+.ordem-container {
+  padding: 15px;
+}
+
+.card-header h2 {
+  margin-top: 30px;
+}
+
+.card-body {
+  margin-top: 30px;
+  font-size: 12px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.numero_ordem {
+  font-size: 20px;
+  color: #ff3333;
+  border-radius: 5%;
+  margin-bottom: 30px;
+}
+
+.data_abertura, .nome_consumidor, .cpf_consumidor {
+    font-size: 16px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: white;
+}
+
+/* Mensagem vazio */
+.empty {
+  text-align: center;
+  color: gray;
+  margin-top: 40px;
+}
+
+/* Botão flutuante */
+.fab {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  color: white;
+  border: none;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  font-size: 28px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  background-color: #ff3333;
+}
+

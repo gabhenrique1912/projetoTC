@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>Ordens de Serviço</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <!-- Lista de ordem -->
+  <div class="ordem-container">
+
+    <!-- Caso não tenha ordem -->
+    <div *ngIf="ordem && ordem.length === 0" class="empty">
+      Nenhuma ordem encontrada.
+    </div>
+
+    <!-- Lista -->
+    <ion-list *ngIf="ordem && ordem.length > 0">
+      <ion-item *ngFor="let o of ordem">
+        <ion-label>
+          <span class="numero_ordem"> {{ o.numero_ordem }} </span>
+          
+            
+          <div class="card-body">
+            
+            <h2 class="nome_consumidor">Consumidor: {{ o.nome_consumidor }} </h2>
+            <p class="cpf_consumidor">CPF do consumidor: {{ o.cpf_consumidor }} </p>
+            <span class="data_abertura">Data da abertura: {{ o.data_abertura }} </span>
+          </div>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+  
+  <!-- Botão flutuante -->
+  <button class="fab" (click)="abrirModal()">+</button>
+
+
+</ion-content>
